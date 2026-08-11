@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Über uns — BLOOMOPTICA, Floristik aus Berlin-Mahlsdorf</title>
+<meta name="description" content="Stefanie Haase, ausgebildete Floristin, gelernt bei Blumen-Koch und Marsano. Seit 2026 unter eigenem Namen. Werkstatt in Berlin-Mahlsdorf, Zustellung im gesamten Stadtgebiet.">
+<meta name="theme-color" content="#000000">
+
+<!-- Schrift selbst gehostet, kein Google-CDN (DSGVO). -->
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-latin.woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="preload" as="image" href="bilder/ueber-uns.webp">
+
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<script>document.documentElement.className="js"</script>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<!-- Logo: Rosette aus sechs Blaettern — Bluete und Objektivblende zugleich.
+     Mit dem Namen Bloomoptica traegt die Doppeldeutung wieder: bloom + optica. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="mark" viewBox="0 0 48 48">
+    <g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round">
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(60 24 24)"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(120 24 24)"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(180 24 24)"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(240 24 24)"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(300 24 24)"/>
+    </g>
+    <circle cx="24" cy="24" r="3.2" fill="currentColor"/>
+  </symbol>
+  <symbol id="arr" viewBox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="chk" viewBox="0 0 16 16"><path d="M3 8.5 6.4 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+</svg>
+
+<!-- ========================= Kopfzeile ========================= -->
+<div class="promo">Bis <b>13:00</b> bestellt — heute in Berlin zugestellt · Deutschlandweit über Nacht</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html" aria-label="Bloomoptica, zur Startseite">
+      <svg aria-hidden="true"><use href="#mark"></use></svg>
+      <span class="word">Bloomoptica</span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="index.html#sortiment">Sortiment</a>
+      <a href="index.html#boxen">Blumenboxen</a>
+      <a href="index.html#abo">Abo</a>
+      <a href="index.html#workshops">Workshops</a>
+      <a href="index.html#geschaeft">Geschäftskunden</a>
+      <a href="ueber-uns.html" aria-current="page">Über uns</a>
+      <a href="index.html#versand">Versand</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn" href="index.html#sortiment">Bestellen</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="sheet">
+      <span></span>
+    </button>
+  </div>
+
+  <div class="sheet" id="sheet" data-open="false">
+    <a href="index.html#sortiment">Sortiment</a>
+    <a href="index.html#boxen">Blumenboxen</a>
+    <a href="index.html#abo">Abo</a>
+    <a href="index.html#workshops">Workshops</a>
+    <a href="index.html#geschaeft">Geschäftskunden</a>
+    <a href="ueber-uns.html" aria-current="page">Über uns</a>
+    <a href="index.html#versand">Versand</a>
+    <a class="btn" href="index.html#sortiment">Bestellen</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========================= Kopfbereich ========================= -->
+  <div class="pagehead">
+    <div class="in">
+      <div>
+        <span class="eyebrow" data-seq style="--d:0ms">Über uns</span>
+        <h1 data-seq style="--d:60ms">Saison statt Sortiment, Termin statt Vielleicht</h1>
+        <p class="lede" data-seq style="--d:120ms">
+          Ausgebildete Floristin, gelernt in zwei anspruchsvollen Berliner Häusern.
+          Seit 2026 unter eigenem Namen. Werkstatt in Mahlsdorf, Zustellung im ganzen
+          Stadtgebiet — persönlich und über feste Kurierpartner.
+        </p>
+      </div>
+      <div data-seq style="--d:100ms">
+        <span class="shot">
+          <img src="bilder/ueber-uns.webp" width="900" height="1125" fetchpriority="high" decoding="async"
+               alt="Kind steht mit frisch geschnittenen Gladiolen zwischen den Reihen eines Blumenfelds">
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================= Dreiklang ========================= -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="triad">
+        <div data-reveal>
+          <h2>Das Problem</h2>
+          <p>Blumen online zu bestellen ist in Deutschland ein Glücksspiel. Man sieht ein Bild,
+            bekommt etwas anderes, und niemand sagt verbindlich, wann es ankommt.</p>
+        </div>
+        <div data-reveal>
+          <h2>Unsere Antwort</h2>
+          <p>Ein kleines Sortiment statt Katalog. <strong>Zwölf Artikel</strong>, jede Woche neu
+            zusammengestellt aus dem, was der Markt am Montag hergibt. Bestellung bis 13 Uhr,
+            Zustellung noch am selben Tag in Berlin — im gewählten Zeitfenster, persönlich oder
+            über feste Kurierpartner.</p>
+        </div>
+        <div data-reveal>
+          <h2>Wer dahintersteht</h2>
+          <p><strong>Stefanie Haase</strong>, ausgebildete Floristin, gelernt bei Blumen-Koch und
+            Marsano. Zwei Häuser, in denen Termintreue Bedingung ist, nicht Versprechen. Seit 2026
+            unter eigenem Namen, Werkstatt in Berlin-Mahlsdorf.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Zahlen ========================= -->
+  <div class="wrap">
+    <div class="zahlen" data-reveal>
+      <div><b>18</b><span>Jahre im Handwerk</span></div>
+      <div><b>12</b><span>Artikel je Woche</span></div>
+      <div><b>13:00</b><span>Annahmeschluss Berlin</span></div>
+      <div><b>3</b><span>Zeitfenster täglich</span></div>
+    </div>
+  </div>
+
+  <!-- ========================= Werkstatt ========================= -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="split flip">
+        <div class="split-media" data-reveal>
+          <span class="shot">
+            <img src="bilder/werkstatt.webp" width="1400" height="933" loading="lazy" decoding="async"
+                 alt="Wicken, Anthurien und Gerbera stehen zum Beladen bereit, dahinter der Lieferwagen">
+          </span>
+        </div>
+        <div data-reveal>
+          <span class="eyebrow">Die Werkstatt</span>
+          <h2>Eingekauft wird persönlich, nicht nach Katalog</h2>
+          <p class="body">
+            Stefanie Haase hat Floristin gelernt und bei Blumen-Koch und Marsano gearbeitet —
+            zwei Berliner Häuser, in denen Termintreue keine Empfehlung ist, sondern Bedingung.
+            Das ist geblieben.
+          </p>
+          <p class="body">
+            Seit 2026 bindet sie unter eigenem Namen. Eingekauft wird jede Woche persönlich,
+            nach Saison und nach Markt, nicht nach Katalog. Deshalb wechselt die Wochenblume:
+            im Mai Flieder, im August Dahlien, im Januar kein Sommerstrauß.
+          </p>
+          <p class="body">
+            Gebunden wird in der Werkstatt in Mahlsdorf, jeder Auftrag von Hand. Zugestellt wird
+            persönlich oder über unsere Kurierpartner — je nach Route und Uhrzeit. Zugesagt ist
+            in beiden Fällen das Zeitfenster.
+          </p>
+        </div>
+      </div>
+
+      <blockquote class="quote" data-reveal>
+        <p>„Ich habe dort gelernt, wo Termine keine Empfehlung sind, sondern Bedingung.
+          Das ist geblieben."</p>
+        <footer>Stefanie Haase · Geschäftsführerin, Bloomoptica GmbH · Berlin</footer>
+      </blockquote>
+
+      <div class="duo">
+        <div data-reveal>
+          <h3>Werdegang</h3>
+          <!-- OFFEN: Die Zahlen stehen vorerst als Dauer in Jahren, so wie durchgegeben.
+               Spaeter auf Kalenderjahre umstellen — Ausbildungsbeginn vermutlich 2004,
+               ist noch zu bestaetigen. Dann auch die "18 Jahre im Handwerk" im
+               Zahlenband oben nachrechnen. -->
+          <ul class="cv">
+            <li><span class="y">3 Jahre</span><span class="w">Ausbildung zur Floristin, Blumen-Koch Berlin</span></li>
+            <li><span class="y">5 Jahre</span><span class="w">Blumen-Koch Berlin</span></li>
+            <li><span class="y">10 Jahre</span><span class="w">Marsano Berlin</span></li>
+            <li><span class="y">seit 2026</span><span class="w">Selbstständig, eigene Werkstatt</span></li>
+          </ul>
+          <p class="fine">Angaben zu früheren Arbeitgebern beschreiben den Werdegang.
+            Eine geschäftliche Verbindung oder Empfehlung besteht nicht.</p>
+        </div>
+
+        <div data-reveal>
+          <h3>Werkstatt und Zustellung</h3>
+          <address class="ort">
+            <b>Bloomoptica GmbH</b><br>
+            Lutherstraße 20–21<br>
+            12623 Berlin-Mahlsdorf
+            <p>Abholung nach Absprache. Zustellung im gesamten Stadtgebiet — persönlich
+              durch uns oder über unsere Kurierpartner, im gewählten Zeitfenster.</p>
+          </address>
+          <div class="cta" style="display:flex; flex-wrap:wrap; gap:12px; margin-top:26px">
+            <a class="btn" href="index.html#sortiment">Sortiment ansehen</a>
+            <a class="btn btn-line" href="index.html#workshops">In die Werkstatt kommen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Abschluss ========================= -->
+  <div class="band" data-reveal>
+    <span class="eyebrow">Bis 13:00 bestellt</span>
+    <h2 style="margin-top:18px">Heute noch auf dem Tisch</h2>
+    <p>Innerhalb Berlins stellen wir am selben Tag zu. Sie wählen das Zeitfenster,
+      wir melden uns, wenn die Zustellung unterwegs ist.</p>
+    <div class="cta">
+      <a class="btn" href="index.html#sortiment">Sortiment ansehen</a>
+      <a class="btn btn-line" href="index.html#versand">Versand und Zeitfenster</a>
+    </div>
+  </div>
+</main>
+
+<!-- ========================= Fusszeile ========================= -->
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a class="logo" href="index.html" aria-label="Bloomoptica, zur Startseite">
+          <svg aria-hidden="true"><use href="#mark"></use></svg>
+          <span class="word">Bloomoptica</span>
+        </a>
+        <p>Floristik aus Berlin-Mahlsdorf. Saison statt Sortiment, Termin statt Vielleicht.</p>
+        <address>
+          Bloomoptica GmbH<br>
+          Lutherstraße 20–21<br>
+          12623 Berlin-Mahlsdorf
+        </address>
+      </div>
+
+      <div class="f-col">
+        <h4>Kaufen</h4>
+        <a href="index.html#sortiment">Sträuße</a>
+        <a href="index.html#boxen">Blumenboxen</a>
+        <a href="index.html#sortiment">Deko und Trockenes</a>
+        <a href="index.html#abo">Abonnement</a>
+      </div>
+
+      <div class="f-col">
+        <h4>Für Unternehmen</h4>
+        <a href="index.html#geschaeft">Ausstattung</a>
+        <a href="index.html#geschaeft">Kauf auf Rechnung</a>
+        <a href="index.html#workshops">Teamworkshops</a>
+        <a href="index.html#geschaeft">Events und Eröffnungen</a>
+      </div>
+
+      <div class="f-col">
+        <h4>Service</h4>
+        <a href="index.html#versand">Versand und Zeitfenster</a>
+        <a href="index.html#workshops">Workshops</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="ueber-uns.html">Über uns</a>
+      </div>
+    </div>
+
+    <div class="f-bot">
+      <span>© 2026 Bloomoptica GmbH</span>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+      <a href="#">Widerruf</a>
+      <span class="sp">Entwurf · Bilder sind Platzhalter, Preise unverbindlich</span>
+    </div>
+  </div>
+</footer>
+
+<script src="seite.js"></script>
+</body>
+</html>

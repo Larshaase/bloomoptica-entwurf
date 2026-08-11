@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BLOOMOPTICA — Floristik aus Berlin, taggenau zugestellt</title>
+<meta name="description" content="Saisonale Floristik aus Berlin. Bis 13:00 bestellt, heute zugestellt. Sträuße, Blumenboxen, Deko, Abonnements, Ausstattung für Geschäftskunden und Workshops für jedes Alter.">
+<meta name="theme-color" content="#000000">
+
+<!-- Schrift selbst gehostet, kein Google-CDN (DSGVO). Jost steht stellvertretend
+     fuer 'Brown' (Lineto), die Hausschrift von FLOWERBX - siehe fonts/fonts.css. -->
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-latin.woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="preload" as="image" href="bilder/hero-wide.webp">
+
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<script>document.documentElement.className="js"</script>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<!-- Logo: Rosette aus sechs Blaettern — Bluete und Objektivblende zugleich.
+     Mit dem Namen Bloomoptica traegt die Doppeldeutung wieder: bloom + optica. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="mark" viewBox="0 0 48 48">
+    <g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round">
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(60 24 24)"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(120 24 24)"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(180 24 24)"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(240 24 24)"/>
+      <path d="M24 24C18.4 17.6 18.4 10.2 24 4c5.6 6.2 5.6 13.6 0 20Z" transform="rotate(300 24 24)"/>
+    </g>
+    <circle cx="24" cy="24" r="3.2" fill="currentColor"/>
+  </symbol>
+  <symbol id="arr" viewBox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="chk" viewBox="0 0 16 16"><path d="M3 8.5 6.4 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+</svg>
+
+<!-- ========================= Kopfzeile ========================= -->
+<div class="promo">Bis <b>13:00</b> bestellt — heute in Berlin zugestellt · Deutschlandweit über Nacht</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#" aria-label="Bloomoptica, zur Startseite">
+      <svg aria-hidden="true"><use href="#mark"></use></svg>
+      <span class="word">Bloomoptica</span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="#sortiment">Sortiment</a>
+      <a href="#boxen">Blumenboxen</a>
+      <a href="#abo">Abo</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#geschaeft">Geschäftskunden</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="#versand">Versand</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn" href="#sortiment">Bestellen</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="sheet">
+      <span></span>
+    </button>
+  </div>
+
+  <div class="sheet" id="sheet" data-open="false">
+    <a href="#sortiment">Sortiment</a>
+    <a href="#boxen">Blumenboxen</a>
+    <a href="#abo">Abo</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#geschaeft">Geschäftskunden</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="#versand">Versand</a>
+    <a class="btn" href="#sortiment">Bestellen</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========================= Hero ========================= -->
+  <section class="hero">
+    <div class="frame">
+      <img src="bilder/hero-wide.webp" width="1536" height="848" fetchpriority="high" decoding="async"
+           alt="Ranunkeln, Anthurien und Wicken in Rosa und Rot vor einer schwarzen Klinkerwand">
+      <span class="scrim"></span>
+      <div class="inner">
+        <span class="eyebrow" data-seq style="--d:0ms">Wochenblume · KW 33</span>
+        <h1 data-seq style="--d:60ms">Blumen, die am selben Tag ankommen</h1>
+        <p data-seq style="--d:120ms">
+          Saisonale Floristik aus einer Berliner Werkstatt. Gebunden am Morgen der Zustellung,
+          gebracht im Zeitfenster Ihrer Wahl.
+        </p>
+        <div class="cta" data-seq style="--d:180ms">
+          <a class="btn btn-onImage" href="#sortiment">Sortiment ansehen</a>
+          <a class="btn btn-onDark" href="#abo">Abo einrichten</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-facts">
+      <div><b>Annahmeschluss 13:00</b><span>Zustellung am selben Tag innerhalb Berlins</span></div>
+      <div><b>Drei Zeitfenster</b><span>Vormittags · 14–17 Uhr · 17:30–19:30 Uhr</span></div>
+      <div><b>Wechselndes Sortiment</b><span>Was nicht frisch ist, steht nicht im Shop</span></div>
+    </div>
+  </section>
+
+  <!-- ========================= Laufband ========================= -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div>
+        <span>Taggenaue Zustellung</span><span>Sträuße und Blumenboxen</span><span>Deko und Trockenblumen</span>
+        <span>Abonnement</span><span>Geschäftsausstattung</span><span>Workshops für jedes Alter</span>
+      </div>
+      <div>
+        <span>Taggenaue Zustellung</span><span>Sträuße und Blumenboxen</span><span>Deko und Trockenblumen</span>
+        <span>Abonnement</span><span>Geschäftsausstattung</span><span>Workshops für jedes Alter</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================= Kategorien ========================= -->
+  <section class="sec" id="sortiment">
+    <div class="wrap">
+      <div class="head-row">
+        <div class="sec-head" data-reveal>
+          <span class="eyebrow">Sortiment</span>
+          <h2>Vier Wege, Blumen zu verschenken</h2>
+        </div>
+        <a class="link-u" href="#sortiment" data-reveal>Alles ansehen <svg aria-hidden="true"><use href="#arr"></use></svg></a>
+      </div>
+
+      <div class="kats">
+        <a class="kat" href="#sortiment" data-reveal>
+          <span class="shot">
+            <img src="bilder/kat-strauss.webp" width="760" height="950" loading="lazy" decoding="async"
+                 alt="Strauß aus zarten Pfingstrosen in einer Vase auf einem Holztisch">
+            <span class="veil"></span>
+          </span>
+          <h3>Sträuße</h3>
+          <p>Frei gebunden, in drei Größen. Ab 29 €</p>
+        </a>
+
+        <a class="kat" href="#boxen" data-reveal>
+          <span class="shot">
+            <img src="bilder/kat-box.webp" width="760" height="950" loading="lazy" decoding="async"
+                 alt="Geöffnete Versandbox mit Blumen und beiliegender Karte">
+            <span class="veil"></span>
+          </span>
+          <h3>Blumenboxen</h3>
+          <p>Deutschlandweit im Karton. Ab 39 €</p>
+        </a>
+
+        <a class="kat" href="#sortiment" data-reveal>
+          <span class="shot">
+            <img src="bilder/kat-deko.webp" width="760" height="950" loading="lazy" decoding="async"
+                 alt="Mehrere Glasvasen mit Trockenblumen nebeneinander">
+            <span class="veil"></span>
+          </span>
+          <h3>Deko und Trockenes</h3>
+          <p>Für Tisch, Fenster und Regal. Ab 24 €</p>
+        </a>
+
+        <a class="kat" href="#geschaeft" data-reveal>
+          <span class="shot">
+            <img src="bilder/kat-hochzeit.webp" width="760" height="950" loading="lazy" decoding="async"
+                 alt="Gedeckte Gartentafel mit rosa Blüten in Gläsern unter einem Sonnenschirm">
+            <span class="veil"></span>
+          </span>
+          <h3>Hochzeit und Event</h3>
+          <p>Auf Anfrage, mit Vorgespräch</p>
+        </a>
+      </div>
+
+      <div class="anlass" data-reveal>
+        <a href="#sortiment">Geburtstag</a>
+        <a href="#sortiment">Danke</a>
+        <a href="#sortiment">Geburt</a>
+        <a href="#sortiment">Trauer</a>
+        <a href="#sortiment">Genesung</a>
+        <a href="#sortiment">Ohne Anlass</a>
+        <a href="#sortiment">Unter 40 €</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Wochenblume ========================= -->
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="split">
+        <div class="split-media" data-reveal>
+          <span class="shot">
+            <img src="bilder/wochenblume.webp" width="1000" height="1250" loading="lazy" decoding="async"
+                 alt="Weiße und rosa Pfingstrosen aus der Nähe">
+          </span>
+        </div>
+        <div data-reveal>
+          <span class="eyebrow">Wochenblume</span>
+          <h2>Was gerade geschnitten wird</h2>
+          <p class="body">
+            Das Sortiment wechselt jede Woche. Was hier steht, ist heute im Haus — und was
+            nicht frisch ist, lässt sich gar nicht erst bestellen. Die Auswahl folgt der Saison,
+            nicht dem Katalog.
+          </p>
+          <ul class="ticks">
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Gebunden am Morgen der Zustellung</li>
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Regionale Gärtnereien, solange die Saison es zulässt</li>
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Vorlaufzeit nur, wo sie fachlich nötig ist</li>
+          </ul>
+          <div class="cta"><a class="btn" href="#sortiment">Zur Wochenblume</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Auswahl ========================= -->
+  <section class="sec" id="boxen" style="padding-top:0">
+    <div class="wrap">
+      <div class="head-row">
+        <div class="sec-head" data-reveal>
+          <span class="eyebrow">Diese Woche im Haus</span>
+          <h2>Eine Auswahl</h2>
+        </div>
+        <a class="link-u" href="#sortiment" data-reveal>Ganzes Sortiment <svg aria-hidden="true"><use href="#arr"></use></svg></a>
+      </div>
+
+      <div class="grid4">
+        <a class="prod" href="#sortiment" data-reveal>
+          <span class="shot">
+            <img src="bilder/prod-flieder.webp" width="640" height="800" loading="lazy" decoding="async"
+                 alt="Violetter Flieder auf hellem Holz">
+            <span class="veil"></span><span class="flag">Wochenblume</span>
+          </span>
+          <h3>Flieder und Wicke</h3>
+          <div class="row"><span class="price">ab 38,00 €</span><span class="note">S · M · L</span></div>
+        </a>
+
+        <a class="prod" href="#sortiment" data-reveal>
+          <span class="shot">
+            <img src="bilder/prod-weiss.webp" width="640" height="800" loading="lazy" decoding="async"
+                 alt="Weiße Rosen mit Schleierkraut">
+            <span class="veil"></span>
+          </span>
+          <h3>Weiß gebunden</h3>
+          <div class="row"><span class="price">ab 45,00 €</span><span class="note">Drei Größen</span></div>
+        </a>
+
+        <a class="prod" href="#sortiment" data-reveal>
+          <span class="shot">
+            <img src="bilder/prod-lilie.webp" width="640" height="800" loading="lazy" decoding="async"
+                 alt="Rosa Lilie in einer schlichten Glasvase">
+            <span class="veil"></span>
+          </span>
+          <h3>Lilie, einzeln</h3>
+          <div class="row"><span class="price">ab 14,00 €</span><span class="note">Auch als Box</span></div>
+        </a>
+
+        <a class="prod" href="#sortiment" data-reveal>
+          <span class="shot">
+            <img src="bilder/prod-orchidee.webp" width="640" height="800" loading="lazy" decoding="async"
+                 alt="Weiße Orchideenblüten vor hellem Grund">
+            <span class="veil"></span><span class="flag">Vorlauf 2 Tage</span>
+          </span>
+          <h3>Trauerfloristik</h3>
+          <div class="row"><span class="price">ab 95,00 €</span><span class="note">Nach Absprache</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Workshops ========================= -->
+  <section class="sec" id="workshops" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head" data-reveal style="margin-bottom:clamp(28px,3.6vw,46px)">
+        <span class="eyebrow">Werkstatt</span>
+        <h2>Workshops für jedes Alter</h2>
+        <p class="lede">In kleiner Runde am langen Tisch. Wir stellen Material, Werkzeug und Getränke;
+          mitzubringen ist nichts. Wer zum ersten Mal bindet, ist genauso richtig wie jemand,
+          der es seit dreißig Jahren tut.</p>
+      </div>
+
+      <div class="kurse">
+        <article class="kurs" data-reveal>
+          <span class="shot">
+            <img src="bilder/kurs-abend.webp" width="700" height="875" loading="lazy" decoding="async"
+                 alt="Menschen binden gemeinsam an einem langen Tisch Blumen">
+          </span>
+          <div class="in">
+            <h3>Abendkurs Saisonstrauß</h3>
+            <div class="meta"><span>Ab 16 Jahren</span><span>2,5 Stunden</span><span>Donnerstags</span></div>
+            <p>Der Klassiker. Sie binden einen Strauß aus dem, was gerade geschnitten wird, und nehmen ihn mit.</p>
+            <div class="foot">
+              <span class="price">89 €<small> / Person</small></span>
+              <span class="seats">4 von 10 frei</span>
+            </div>
+            <a class="btn" href="#workshops">Termin wählen</a>
+          </div>
+        </article>
+
+        <article class="kurs" data-reveal>
+          <span class="shot">
+            <img src="bilder/kurs-generationen.webp" width="700" height="875" loading="lazy" decoding="async"
+                 alt="Hände mehrerer Generationen binden gemeinsam einen Kranz">
+          </span>
+          <div class="in">
+            <h3>Generationen binden Kränze</h3>
+            <div class="meta"><span>Zwei Personen</span><span>3 Stunden</span><span>Samstags</span></div>
+            <p>Für Große und Kleine gemeinsam — Enkel und Großeltern, Eltern und Kinder. Sitzplätze nebeneinander, ein Kranz zu zweit.</p>
+            <div class="foot">
+              <span class="price">129 €<small> / Paar</small></span>
+              <span class="seats">6 von 12 frei</span>
+            </div>
+            <a class="btn" href="#workshops">Termin wählen</a>
+          </div>
+        </article>
+
+        <article class="kurs" data-reveal>
+          <span class="shot">
+            <img src="bilder/kurs-basis.webp" width="700" height="875" loading="lazy" decoding="async"
+                 alt="Zwei Kinder knien im Beet und halten selbst gepflückte Tulpen in die Kamera">
+          </span>
+          <div class="in">
+            <h3>Erste Blumen, für Kinder</h3>
+            <div class="meta"><span>6 bis 12 Jahre</span><span>90 Minuten</span><span>Mittwochs</span></div>
+            <p>Kurze Runde mit stumpfen Scheren und viel Grün. Eine Begleitperson darf dabeibleiben, muss aber nicht.</p>
+            <div class="foot">
+              <span class="price">39 €<small> / Kind</small></span>
+              <span class="seats">Ausgebucht bis 24.08.</span>
+            </div>
+            <a class="btn btn-line" href="#workshops">Auf die Warteliste</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="hinweis" data-reveal>
+        <p><b>Gruppen, Schulen und Einrichtungen.</b> Serientermine, Betriebsfeiern und Kurse in
+          Ihren Räumen rechnen wir als einen Vorgang mit einer Rechnung ab. Sagen Sie uns Anlass,
+          Personenzahl und Zeitraum — Sie bekommen ein Angebot, keine Bestellbestätigung.</p>
+        <a class="btn btn-line" href="#geschaeft">Gruppe anfragen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Geschäftskunden ========================= -->
+  <section class="sec" id="geschaeft" style="padding-top:0">
+    <div class="wrap">
+      <div class="split flip">
+        <div class="split-media" data-reveal>
+          <span class="shot">
+            <img src="bilder/business.webp" width="1000" height="1250" loading="lazy" decoding="async"
+                 alt="Weiße Orchideen und Nelken mit Eukalyptus in dunkler Vase auf dem roten Empfangstresen eines Ferrari-Autohauses">
+          </span>
+        </div>
+        <div data-reveal>
+          <span class="eyebrow">Geschäftskunden</span>
+          <h2>Blumen verändern Räume</h2>
+          <p class="body">
+            Wir statten Empfang, Besprechung, Ladenfläche und Gastraum aus — wöchentlich,
+            zweiwöchentlich oder zum Termin. Sie sagen, wie viele Punkte, wir kümmern uns um
+            Standzeit, Wechsel und Entsorgung.
+          </p>
+          <ul class="ticks">
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Kauf auf Rechnung mit Zahlungsziel, nach Freischaltung</li>
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Eine Sammelrechnung im Monat statt vieler Belege</li>
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Austausch statt Nachfüllen, Gefäße bleiben bei Ihnen</li>
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Feste Ansprechperson, feste Wochentage</li>
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Events, Eröffnungen und Kundengeschenke auf Zuruf</li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="#geschaeft">Ausstattung anfragen</a>
+            <a class="btn btn-line" href="#geschaeft">Musterstrauß bestellen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Abo ========================= -->
+  <section class="sec" id="abo" style="padding-top:0">
+    <div class="wrap">
+      <div class="dark" data-reveal>
+        <div class="sec-head center">
+          <span class="eyebrow">Abonnement</span>
+          <h2>Jede Woche frisch, ohne daran zu denken</h2>
+          <p>Fester Wochentag, monatlich kündbar, mit Pausenfunktion für den Urlaub.
+            Privat über SEPA-Lastschrift, geschäftlich über die monatliche Sammelrechnung.</p>
+        </div>
+
+        <div class="tiers">
+          <div class="tier">
+            <h3>Klein</h3>
+            <div class="amt">32 €<small> / Lieferung</small></div>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Wöchentlich oder zweiwöchentlich</li>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Fester Wochentag Ihrer Wahl</li>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Pause mit Enddatum</li>
+            </ul>
+            <a class="btn btn-onDark" href="#abo">Wählen</a>
+          </div>
+
+          <div class="tier">
+            <span class="badge">Meistgewählt</span>
+            <h3>Mittel</h3>
+            <div class="amt">48 €<small> / Lieferung</small></div>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Größerer Strauß, saisonal gebunden</li>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Vase auf Wunsch beim Start</li>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Wechsel der Stufe jederzeit</li>
+            </ul>
+            <a class="btn btn-onImage" href="#abo">Wählen</a>
+          </div>
+
+          <div class="tier">
+            <h3>Geschäftlich</h3>
+            <div class="amt">ab 79 €<small> / Woche</small></div>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Mehrere Punkte je Standort</li>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Monatliche Sammelrechnung</li>
+              <li><svg aria-hidden="true"><use href="#chk"></use></svg> Austausch statt Nachfüllen</li>
+            </ul>
+            <a class="btn btn-onDark" href="#geschaeft">Anfragen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Ablauf ========================= -->
+  <section class="sec" id="versand" style="padding-top:0">
+    <div class="wrap">
+      <div class="split">
+        <div class="split-media" data-reveal>
+          <span class="shot wide">
+            <img src="bilder/werkstatt.webp" width="1400" height="933" loading="lazy" decoding="async"
+                 alt="Wicken, Anthurien und Gerbera stehen zum Beladen bereit, dahinter der Lieferwagen">
+          </span>
+        </div>
+        <div data-reveal>
+          <span class="eyebrow">So arbeiten wir</span>
+          <h2>Vom Schnitt bis an die Tür</h2>
+          <p class="body">Drei Zeitfenster am Tag. Innerhalb Berlins stellen wir persönlich zu
+            oder über feste Kurierpartner — je nach Route und Uhrzeit; zugesagt ist in beiden
+            Fällen das Zeitfenster. Deutschlandweit trocken verpackt über Nacht, sonntags gar nicht.</p>
+          <ul class="ticks">
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Berlin 6,90 € · ab 80 € Warenwert kostenfrei</li>
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> Deutschland 12,90 € · ab 120 € kostenfrei · Annahmeschluss 11 Uhr</li>
+            <li><svg aria-hidden="true"><use href="#chk"></use></svg> EU ab 24,90 € · Österreich, Niederlande, Belgien, Dänemark, Polen, Tschechien</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step" data-reveal>
+          <h3>Sie wählen den Tag</h3>
+          <p>Der Kalender zeigt nur Termine, die wirklich lieferbar sind — Sperrtage und volle
+            Zeitfenster erscheinen gar nicht erst als Option.</p>
+        </div>
+        <div class="step" data-reveal>
+          <h3>Wir binden am Morgen</h3>
+          <p>Nicht auf Vorrat. Was zugestellt wird, entsteht am Tag der Zustellung in der Werkstatt.</p>
+        </div>
+        <div class="step" data-reveal>
+          <h3>Zustellung im Fenster</h3>
+          <p>Wir melden uns, wenn die Tour startet. Bei abweichender Lieferadresse brauchen wir
+            die Telefonnummer der Empfängerin oder des Empfängers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Social ========================= -->
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="ig" data-reveal>
+        <div>
+          <span class="eyebrow">Aus der Werkstatt</span>
+          <h2 style="margin-top:16px">Was diese Woche durch die Hände ging</h2>
+        </div>
+        <a class="handle" href="#"><svg aria-hidden="true"><use href="#ig"></use></svg> @bloomoptica</a>
+      </div>
+
+      <div class="social-grid" data-reveal>
+        <a href="#"><span class="shot sq"><img src="bilder/social-1.webp" width="480" height="480" loading="lazy" decoding="async" alt="Blüten, Kirschen und Gemüse aus dem Garten auf weißen Holzdielen"><span class="veil"></span></span></a>
+        <a href="#"><span class="shot sq"><img src="bilder/social-2.webp" width="480" height="480" loading="lazy" decoding="async" alt="Frühlingsstrauß aus Tulpen, Narzissen und Hyazinthen in weißer Vase"><span class="veil"></span></span></a>
+        <a href="#"><span class="shot sq"><img src="bilder/social-3.webp" width="480" height="480" loading="lazy" decoding="async" alt="Anthurien im farbigen Licht einer abendlichen Veranstaltung"><span class="veil"></span></span></a>
+        <a href="#"><span class="shot sq"><img src="bilder/social-4.webp" width="480" height="480" loading="lazy" decoding="async" alt="Gedeckte Tafel im Freien mit Bougainvillea und Windlichtern"><span class="veil"></span></span></a>
+        <a href="#"><span class="shot sq"><img src="bilder/social-5.webp" width="480" height="480" loading="lazy" decoding="async" alt="Fertige Gestecke auf den Regalen der Werkstatt"><span class="veil"></span></span></a>
+        <a href="#"><span class="shot sq"><img src="bilder/social-6.webp" width="480" height="480" loading="lazy" decoding="async" alt="Rosa Ranunkeln und Gerbera vor schwarzer Klinkerwand"><span class="veil"></span></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Abschluss ========================= -->
+  <div class="band" data-reveal>
+    <span class="eyebrow">Bis 13:00 bestellt</span>
+    <h2 style="margin-top:18px">Heute noch auf dem Tisch</h2>
+    <p>Innerhalb Berlins fahren wir selbst. Sie wählen das Zeitfenster, wir melden uns,
+      wenn die Zustellung unterwegs ist.</p>
+    <div class="cta">
+      <a class="btn" href="#sortiment">Sortiment ansehen</a>
+      <a class="btn btn-line" href="#versand">Versand und Zeitfenster</a>
+    </div>
+  </div>
+</main>
+
+<!-- ========================= Fusszeile ========================= -->
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a class="logo" href="#" aria-label="Bloomoptica, zur Startseite">
+          <svg aria-hidden="true"><use href="#mark"></use></svg>
+          <span class="word">Bloomoptica</span>
+        </a>
+        <p>Floristik aus Berlin-Mahlsdorf. Saison statt Sortiment, Termin statt Vielleicht.</p>
+        <address>
+          Bloomoptica GmbH<br>
+          Lutherstraße 20–21<br>
+          12623 Berlin-Mahlsdorf
+        </address>
+      </div>
+
+      <div class="f-col">
+        <h4>Kaufen</h4>
+        <a href="#sortiment">Sträuße</a>
+        <a href="#boxen">Blumenboxen</a>
+        <a href="#sortiment">Deko und Trockenes</a>
+        <a href="#abo">Abonnement</a>
+      </div>
+
+      <div class="f-col">
+        <h4>Für Unternehmen</h4>
+        <a href="#geschaeft">Ausstattung</a>
+        <a href="#geschaeft">Kauf auf Rechnung</a>
+        <a href="#workshops">Teamworkshops</a>
+        <a href="#geschaeft">Events und Eröffnungen</a>
+      </div>
+
+      <div class="f-col">
+        <h4>Service</h4>
+        <a href="#versand">Versand und Zeitfenster</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="ueber-uns.html">Über uns</a>
+      </div>
+    </div>
+
+    <div class="f-bot">
+      <span>© 2026 Bloomoptica GmbH</span>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+      <a href="#">Widerruf</a>
+      <span class="sp">Entwurf · Bilder sind Platzhalter, Preise unverbindlich</span>
+    </div>
+  </div>
+</footer>
+
+<script src="seite.js"></script>
+</body>
+</html>
