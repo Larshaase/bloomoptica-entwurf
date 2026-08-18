@@ -120,7 +120,8 @@ h2{font-size:clamp(23px,2.7vw,35px)}
 .logo{display:flex; align-items:center; gap:10px; flex:none}
 .logo svg{width:26px; height:26px; color:var(--ink)}
 .logo .word{
-  font-size:17px; font-weight:400; letter-spacing:.2em; text-transform:uppercase;
+  font-family:'Cinzel','Times New Roman',serif;
+  font-size:17px; font-weight:400; letter-spacing:.18em; text-transform:uppercase;
   color:var(--ink); line-height:1; padding-left:2px; white-space:nowrap;
 }
 
@@ -356,7 +357,7 @@ footer .logo svg{color:#fff} footer .logo .word{color:#fff}
    ============================================================ */
 /* Zweiwortmarke braucht Platz — Reiter enger stellen, bevor sie umbrechen */
 @media (max-width:1280px){
-  .logo .word{font-size:15px; letter-spacing:.15em}
+  .logo .word{font-size:15px; letter-spacing:.13em}
   .nav-links{gap:17px}
   .nav-links a{font-size:11px; letter-spacing:.13em}
   .nav-right .btn{padding:0 16px; font-size:10.5px; letter-spacing:.16em}
