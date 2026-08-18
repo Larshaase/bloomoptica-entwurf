@@ -1,4 +1,4 @@
-# Bloomoptica — Entwurf
+# Louis Blooms — Entwurf
 
 Gestaltungsentwurf für den Onlineshop einer Berliner Floristik.
 Statische Einzelseite, kein Backend.
